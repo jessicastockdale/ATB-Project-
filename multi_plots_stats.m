@@ -38,7 +38,7 @@ for kk=1:num_sims
   n=0;
   % simulate class
   while num <= thre
-      [stats,~,plotdata]=shut_down(runstuff,params,protoc);
+      [stats,~,plotdata]=sim(runstuff,params,protoc);
       num = stats.total_infected;
       n=n+1;
   end
